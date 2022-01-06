@@ -1,0 +1,105 @@
+﻿//cssClassNameForCalendarEvent holds the class name for each slide. If slide should appear whole day the use 'allTime' as classname else class name according to date eg: 'lunchMenu23thNov'
+// Note for the class name according to date and time like 'lunchMenu23thNov' setting should be changed in 'scrollctrler.js' file.
+{
+  "FoodWastage": {
+    "ProducerMessage": "Health First &mdash; Signalling a new era in Food Safety and Nutrition",
+    "cssClassNameForCalendarEvent": "allTime",
+    "ImagePath": "../fd4.jpg",
+    "WastagePerWeekInKgs": "1120",
+    "NoOfPeople": "2240"
+  },
+  "FoodSafe": {
+    "producerMessage": "Health First &mdash; Signalling a new era in Food Safety and Nutrition",
+    "cssClassNameForCalendarEvent": "allTime",
+    "Title": "Your Food Is Safe",
+    "ImagePath": "../foodSafe.jpg",
+    "Paragraph": "NutriSafe is an initiative by Health First Services to ensure Safety, Quality and Nutrition of food served at the Citrix Cafeteria. The Health First team works passionately along with the Citrix Facilities team to ensure that the food catered to you is safe, healthy and nutritious."
+  },
+  "FruitOfTheDay": {
+    "ProducerMessage": "Health First &mdash; Signalling a new era in Food Safety and Nutrition",
+    "cssClassNameForCalendarEvent": "lunchMenu23thNov",
+    "Title": "Fruit Of The Day - Banana",
+    "ImagePath": "avagado.jpg",
+    "Paragraph": "",
+    "Bulletpoints": [
+      {
+        "Point": "Banana is an edible fruit rich in potassium and vitamins."
+      },
+      {
+        "Point": "Banana helps in providing relief from stomach ulcer, diarrhoea & constipation."
+      },
+      {
+        "Point": "Banana aids in treating piles & anaemia."
+      },
+      {
+        "Point": "It reduces inflammation from arthritis & gout, keeps eyes & bones healthy."
+      }
+    ],
+    "Calories": "89",
+    "Carbohydrate": "23",
+    "Protein": "1.1",
+    "Fat": "0.3",
+    "Sodium": "1"
+  },
+  "MenuOfTheDay": {
+    "cssClassNameForCalendarEvent": "lunchMenu23thNov",
+    "Caterers": [
+      {
+        "ProducerMessage": "Krishna Grand",
+        "Items": [
+          {
+            "ItemName": "Chilli Soya",
+            "ImagePath": "/foodItems/ChilliSoya.jpg"
+          },
+          {
+            "ItemName": "Coconut Chutney",
+            "ImagePath": "/foodItems/CoconutChutney.jpg"
+          },
+          {
+            "ItemName": "Curd",
+            "ImagePath": "/foodItems/Curd.jpg"
+          },
+          {
+            "ItemName": "Dal Methi",
+            "ImagePath": "/foodItems/DalMethi.jpg"
+          },
+          {
+            "ItemName": "Phulka",
+            "ImagePath": "/foodItems/Phulka.jpg"
+          },
+          {
+            "ItemName": "Red Rice",
+            "ImagePath": "/foodItems/RedRice.jpg"
+          },
+          {
+            "ItemName": "Red Rice",
+            "ImagePath": "/foodItems/RedRice.jpg"
+          }
+        ]
+      },
+      {
+        "ProducerMessage": "Adigas",
+        "Items": [
+          {
+            "ItemName": "Chilli Soya",
+            "ImagePath": "/foodItems/ChilliSoya.jpg"
+          },
+          {
+            "ItemName": "Coconut Chutney",
+            "ImagePath": "/foodItems/CoconutChutney.jpg"
+          },
+          {
+            "ItemName": "Curd",
+            "ImagePath": "/foodItems/Curd.jpg"
+          },
+          {
+            "ItemName": "Dal Methi",
+            "ImagePath": "/foodItems/DalMethi.jpg"
+          }
+        ]
+      }
+    ]
+  }
+
+
+}

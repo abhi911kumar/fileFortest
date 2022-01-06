@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Health First &mdash; Player</title>
+    <link rel="shortcut icon" href="fevicon.png">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="./css/healthTips/imageSlide.css" rel="stylesheet" />
+    <link href="./css/healthTips/foodWastage.css" rel="stylesheet" />
+    <link href="./css/healthTips/videoStyle.css" rel="stylesheet" />
+
+</head>
+
+<body ng-app="playerApp" ng-controller="playerController" ng-cloak>
+
+
+
+    <section class="bg-primary" id="one">
+        <div class="container">
+            <div class="itemDiv centerDiv" style="padding:0px;">
+                <!-- Food Wastage -->
+                <div class="foodWastageContainer menu-slides {{foodWastage.cssClassNameForCalendarEvent}}" data-producerMessage="{{foodWastage.ProducerMessage}}">
+
+                    <!--Image-->
+                    <div class="col-lg-5 banner-info-left fadeInLeft animated " data-wow-delay=".5s" style="visibility: visible;animation-delay: 0.5s; animation-name: fadeInLeft;">
+                        <img src="fd4.jpg" class="wasteimg" />
+                    </div>
+                    <div class="col-lg-7 banner-info-right disp">
+                        <div class="banner-info-right-top fadeInRight animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;margin-bottom:10%;">
+                            <br />
+                            <h2 class="text-center wastetitle blackText"><span style="font-size:160% !important;">TODAY'S WASTAGE </span><br /><span style="font-size:160% !important;">IS </span><br /><span style="font-size:160% !important;">TOMMOROW'S SHORTAGE</span></h2>
+                            <!--Display Food and People Data-->
+                            <h3 class="text-center wastetitle">
+                                <span class="text-center blackText" style="font-size:150% !important;">Last Week We Wasted</span><br /><br />
+                                <span class="text-center tab blink text-danger" data-animation="animated zoomInLeft" style="font-size:200% !important;">
+                                    &nbsp; &nbsp; {{foodWastage.WastagePerWeekInKgs}}
+                                </span>
+                                <span class="wastetitle blackText" style="font-size:150% !important;">Kgs Of Food At Lunch</span>
+                            </h3>
+                            <br />
+                            <h3 class="text-center wastetitle">
+                                <span class="wastetitle blackText" style="font-size:150% !important;">This Would Have Fed </span><br /><br />
+                                <span class="wastetitle blackText" style="font-size:160% !important;">one meal to</span>
+                                <span class="text-center tab blink text-danger" data-animation="animated zoomInLeft" style="font-size:200% !important;">
+                                    {{foodWastage.NoOfPeople}}
+                                </span>
+                                <span class="wastetitle blackText" style="font-size:160% !important;">people</span>
+                                <br /><br />
+                                <span class="wastetitle blackText" style="font-size:160% !important; font-style:italic; font-family:sans-serif;">“THINK before you waste your food”</span>
+                            </h3>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- End Of Food Wastage-->
+                <!-- Your Food Is safe -->
+                <div class="menu-slides {{foodSafe.cssClassNameForCalendarEvent}}" data-producerMessage="{{foodSafe.ProducerMessage}}">
+                    <img src="foodSafe.jpg" class="bg" />
+
+                    <div class="page-wrap">
+                        <h1>{{foodSafe.Title}}</h1>
+                        <p>{{foodSafe.Paragraph}}</p>
+
+                    </div>
+
+                </div>
+                <!-- End Of Food Is Safe-->
+                <!-- Fruit Of The Day -->
+                <div class="menu-slides {{fruitOfTheDay.cssClassNameForCalendarEvent}}" data-producerMessage="{{fruitOfTheDay.ProducerMessage}}">
+                    <img src="Banana.jpg" class="bg" />
+
+                    <div class="page-wrap">
+                        <h1> {{fruitOfTheDay.Title}}</h1>
+
+                        <ul class="Bulletpoints" ng-repeat="Bulletpoint in fruitOfTheDay.Bulletpoints">
+                            <li>{{Bulletpoint.Point}}</li>
+
+                        </ul>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <h2 class="text-center tableHeaderLarge">Nutritional Value (Per 100 gms)</h2>
+                                    </tr>
+                                    <tr>
+                                        <th class="tableHeader">Calories-Kcals</th>
+                                        <th class="tableHeader">Carbohydrate-g</th>
+                                        <th class="tableHeader">Protein-g </th>
+                                        <th class="tableHeader">Fat-g</th>
+                                        <th class="tableHeader">Sodium-g</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="tableInfoWhite">{{fruitOfTheDay.Calories}}</th>
+                                        <th class="tableInfoWhite">{{fruitOfTheDay.Carbohydrate}}</th>
+                                        <th class="tableInfoWhite">{{fruitOfTheDay.Protein}}</th>
+                                        <th class="tableInfoWhite">{{fruitOfTheDay.Fat}}</th>
+                                        <th class="tableInfoWhite">{{fruitOfTheDay.Sodium}}</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Of Fruit Of The Day-->
+                <!-- Video Slide -->
+                <!--<div class="col-lg-12 menu-slides video-slide {{videoSlide.cssClassNameForCalendarEvent}}" data-producerMessage="{{videoSlide.ProducerMessage}}">
+                    <div class="fullscreen-bg">
+                        <video id="myVideo" autoplay class="fullscreen-bg__video">
+                            <source src="4BestTimesToDrinkWater.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>-->
+                <!-- End Video SLide-->
+                <!--  27th Nov Player Content Started-->
+                <!--Lunch started-->
+
+                <div ng-repeat="menu in menuOfTheDay track by $index" repeat-end="launchSlick();" class="menu-slides" data-producerMessage="{{menu.ProducerMessage}}" ng-class="menu.cssClassNameForCalendarEvent">
+                    <header class="bg-top">
+                        <marquee>Disclaimer:The calories shown are based on a standardized cooking method. It may vary based on the ingredients and caterer’s cooking methodology.</marquee>
+                    </header>
+                    <!-- Two Items -->
+
+                    <div class="single-row ">
+                        <div class="col-lg-6 maxHeight_238" ng-repeat="item in menu.Items track by $index">
+                            <div class="product_sale nutriChoiceTag" ng-if="item.NutritionistChoice">
+                                <p>Nutritionist's Choice</p>
+                            </div>
+                            <div class="product_sale_caterer catererChoiceTag" ng-if="item.CatererChoice">
+                                <p>Caterer's Choice</p>
+                            </div>
+                            <img class="itemImage" ng-src="foodItems/{{item.ImagePath}}" />
+                        </div>
+                    </div>
+
+                </div>
+                <!--end of lunch-->
+                <!--  27th Nov Player Content Ended-->
+                
+            </div>
+        </div>
+
+
+        <!--Footer -->
+        <nav id="topNav" class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand page-scroll" href="#first"><img alt="ClearTick Logo" src="assets/logonew.png"></a>
+                </div>
+                <div class="navbar-collapse collapse" id="bs-navbar">
+                    <ul class="nav navbar-nav navbar-centre">
+                        <li>
+                            <a class="ProducerName" href="#"></a>
+                            <!--<a class="fontSize15"> Green Tick™ &mdash; Signalling a new era in Food Safety and Nutrition</a>-->
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right customerLogo">
+                        <li>
+                            <a class="navbar-brand page-scroll" href="#first"><img alt="ClearTick Logo" src="assets/citrix-logo-black.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Footer-->
+
+    </section>
+    <!--scripts loaded here -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/slick/slick.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/playerContent.js"></script>
+    <script src="./js/scrollctrler.js"></script>
+  
+</body>
+
+</html>

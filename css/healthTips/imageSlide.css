@@ -1,0 +1,80 @@
+﻿img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    img.bg {
+        left: 50%;
+        margin-left: -512px;
+    }
+}
+
+.page-wrap {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(25, 21, 21, 0.48);
+	box-shadow: 0 0 2px #6d6464;
+	-moz-box-shadow: 0 0 2px #6d6464;
+	-webkit-box-shadow: 0 0 2px #6d6464;
+   /* -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black; */
+}
+
+    .page-wrap p {
+        /*font: 30px Georgia, Serif;*/
+        margin: 0 0 30px 0;
+        /*text-indent: 40px;*/
+        text-align: center;
+        color: #fff;
+        line-height: 1.6;
+        font-size:190%;
+    }
+
+    .page-wrap h1 {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        /*font: 40px Georgia, Serif;*/
+        font-size:220%;
+    }
+
+
+.Bulletpoints {
+    color: #fff;
+    font-size: 200%;
+    line-height: 1.5;
+    /*font-family: Georgia, Serif;*/
+}
+
+.tableHeader {
+    color: #fff !important;
+    /* font-size: 30px; */
+    /* font-weight: bold; */
+    font-size: 180%;
+    /*font-family: Georgia, serif;*/
+    font-weight: normal;
+}
+
+
+.tableHeaderLarge {
+    font-size: 190%;
+    /* font-weight: bold; */
+    /*font-family: Georgia, serif;*/
+}
+
+.tableInfoWhite {
+    color: #fff !important;
+    font-size: 180%;
+}

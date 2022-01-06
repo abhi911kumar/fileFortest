@@ -1,0 +1,235 @@
+﻿/*Css form Food Wastage*/
+/*Blinking Css*/
+.blink {
+    font-size: 1.5em;
+    -webkit-animation: blink .75s linear infinite;
+    -moz-animation: blink .75s linear infinite;
+    -ms-animation: blink .75s linear infinite;
+    -o-animation: blink .75s linear infinite;
+    animation: blink .75s linear infinite;
+}
+
+.foodWastageContainer {
+    background: #fff;
+}
+
+.blackText {
+    color: #000;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    50.01% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    50.01% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    50.01% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    50.01% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    50.01% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+/*Css for image*/
+.wasteimg {
+    -webkit-width: 100%;
+    -webkit-height: auto;
+    -moz-width: 100%;
+    -moz-height: auto;
+    -o-width: 100%;
+    max-height: 800px;
+    /* width: 142%; */
+}
+
+@media screen and (max-width:412px) {
+    .wasteimg {
+        -webkit-max-width: 50%;
+        max-width: 50%;
+        -o-max-width: 50%;
+        -moz-max-width: 50%;
+    }
+}
+
+
+.animation {
+    -webkit-animation-duration: 3s;
+    -o-animation-name: fade;
+    -moz-animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+.information {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.wastetitle {
+    -webkit-font-weight: bold;
+    -moz-font-weight: bold;
+    -o-font-weight: bold;
+    font-weight: bold;
+    /*font-size:1.8em;*/
+}
+/*Media Query form screen 412*/
+/*@media screen and (max-width:412px) {
+ .disp{
+        width:50%!important;
+    }
+
+    .wasteimg {
+        max-width: 55%;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: small;
+    }
+}*/
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #mycarousel {
+        width: 216%;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    #mycarousel {
+        width: 216%;
+    }
+}
+/*img.resize {
+  width:200px;
+  height:40px;
+}
+img.resize {
+  max-width:50%;
+  max-height:50%;
+}*/
+
+@media screen and (min-width: 1400px) {
+    .wasteimg {
+        -webkit-width: 100%;
+        -webkit-height: auto;
+        -moz-width: 100%;
+        -moz-height: auto;
+        -o-width: 100%;
+        -o-height: auto;
+        height: 145%;
+        width: 142%;
+    }
+
+    .wastetitle {
+        font-size: 3.2em !important
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .wasteimg {
+        -webkit-width: 100%;
+        -webkit-height: auto;
+        -moz-width: 100%;
+        -moz-height: auto;
+        -o-width: 100%;
+        -o-height: auto;
+        height: 146%;
+        width: 142%;
+    }
+
+    .wastetitle {
+        font-size: 3.2em !important
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .wasteimg {
+        -webkit-width: 100%;
+        -webkit-height: auto;
+        -moz-width: 100%;
+        -moz-height: auto;
+        -o-width: 100%;
+        -o-height: auto;
+        height: 145%;
+        width: 142%;
+    }
+
+    .wastetitle {
+        font-size: 3.2em !important
+    }
+}
